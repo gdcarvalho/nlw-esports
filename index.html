@@ -10,8 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NLW eSports</title>
     <link rel="stylesheet" href="./styles.css">
-
-  </head>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+   </head>
   <body>
     
     <header> 
@@ -29,29 +33,31 @@
           <h2>Meus jogos</h2>
           <p>Os games que eu mais curto jogar!</p>
 
-          <ul class="games-list">
-            <li>
+          <div 
+          class="swiper mySwiper">
+          <ul class="games-list swiper-wrapper">
+            <li class="swiper-slide">
               <a 
               target="_blank"
               href="https://www.twitch.tv/directory/game/League%20of%20Legends">
                 <img src="https://static-cdn.jtvnw.net/ttv-boxart/21779-188x250.jpg" alt="imagem do league of legends"/>
               </a>
             </li>
-            <li>
+            <li class="swiper-slide">
               <a 
               target="_blank"
               href="https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V">
                 <img src="https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-188x250.jpg" alt="imagem do GTA"/>
               </a>
             </li>
-            <li>
+            <li class="swiper-slide">
               <a 
               target="_blank"
               href="https://www.twitch.tv/directory/game/VALORANT">
                 <img src="https://static-cdn.jtvnw.net/ttv-boxart/516575-188x250.jpg" alt="imagem do Valorant"/>
               </a>
             </li>
-            <li>
+            <li class="swiper-slide">
               <a 
               target="_blank"
               href="https://www.twitch.tv/directory/game/Teamfight%20Tactics">
@@ -59,7 +65,8 @@
               </a>
             </li>
           </ul>
-
+          
+          </div>
         </div>
       </section>
 
@@ -153,6 +160,18 @@
       </section>
 
     </main>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    loop: true,
+  });
+</script>
+
 
   </body>
 </html>
