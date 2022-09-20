@@ -45,11 +45,12 @@ header div img{
   border: 1px solid red;
 }*/
 main{
-  max-width: 580px;
+  max-width: 360px;
   width: 90%;
   margin: 32px auto;
   display: grid;
   gap: 24px;
+  overflow: hidden;
 }
 section{
   color: white;
@@ -84,7 +85,7 @@ transition: transform .3s;
 section ul li:hover{
 transform: scale(1.1);
 }
-.games-list img{
+ .games-list img{
   width: 90px;
   border-radius: 8px;
 }
@@ -130,4 +131,13 @@ main section:nth-child(3){
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* swiper */
+section{
+  overflow: hidden;
+}
+section ul{
+  flex-wrap: nowrap;
+  gap: 0;
 }
