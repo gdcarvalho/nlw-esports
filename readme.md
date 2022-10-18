@@ -16,5 +16,4 @@ Projeto construído no evento Next Level Week da Rocketseat
 
 ## 😍 Contato
 
-eu.gdcarvalho@gmail.com
-
+falecom@ocaradaprogramacao.com.br
